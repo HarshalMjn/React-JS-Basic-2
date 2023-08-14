@@ -31,12 +31,16 @@ const App = () => {
     },
   ];
 
+  function printProductData(data) {
+    console.log(" I am inside APP.js")
+    console.log(data);
+  }
  
 
   return (
     <div>
-    <NewProduct/>
-    <Products items={products} />
+    <NewProduct harshal = {printProductData} />
+    <Products items= {products} />
     </div>
   );
 }
